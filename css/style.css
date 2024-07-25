@@ -13,10 +13,17 @@ body {
 	color: #ffffff;
 }
 
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #ffffff;
+}
+
 button {
 	background-color: transparent;
 	border: none;
 	font-family: Gilroy, Arial, Helvetica, sans-serif;
+	cursor: pointer;
 }
 
 ul {
@@ -451,7 +458,7 @@ ul {
 .btn-invite:hover {
 	color: #ffffff;
 	background-color: #080808;
-	border: none;
+	border-color: transparent;
 }
 
 .invite-img {
@@ -471,6 +478,8 @@ ul {
 	width: 100%;
 }
 
+
+
 .pairs__container {
 	display: flex;
 	justify-content: center;
@@ -480,21 +489,31 @@ ul {
 	gap: 42px;
 }
 
-.pairs__logos {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
-	gap: 0 70px;
+.swiper {
+	max-width: 100%;
+	width: fit-content;
+	height: 100%;
+	overflow: visible;
 }
 
-.pair-logo svg path {
+.swiper-wrapper {
+	transition-timing-function: linear;
+}
+
+.swiper-slide{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+}
+
+.swiper-item {
+	opacity: 0.3;
 	transition: 0.4s;
 }
 
-.pair-logo:hover svg path {
-	fill-opacity: 1;
+.swiper-item:hover{
+	opacity: 1;
 }
 
 .footer {
@@ -543,15 +562,15 @@ ul {
 	transition: 0.4s;
 }
 
-.social-link:hover{
+.social-link:hover {
 	background-color: black;
 }
 
-.social-link svg path{
+.social-link svg path {
 	transition: 0.4s;
 }
 
-.social-link:hover svg path{
+.social-link:hover svg path {
 	fill: white;
 }
 
@@ -563,9 +582,9 @@ ul {
 	transition: 0.4s;
 }
 
-.btn-footer:hover{
+.btn-footer:hover {
 	background: black;
-	border: none;
+	border-color: transparent;
 	color: white;
 }
 
