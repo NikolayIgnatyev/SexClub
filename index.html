@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Клуб Притяжение</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="js/main.js" defer></script>
-  
+
 </head>
 
 <body>
@@ -20,24 +20,94 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <a class="header__logo">
-            <img src="/images/logo.svg" alt="Логотип">
-          </a>
-          <nav class="header__nav-menu">
-            <ul>
-              <li class="header__nav-menu-link"><a href="#">Главная/a></li>
-              <li class="header__nav-menu-link"><a href="#">Мероприятия</a></li>
-              <li class="header__nav-menu-link"><a href="#">Браслеты</a></li>
-              <li class="header__nav-menu-link"><a href="#">Правила</a></li>
-              <li class="header__nav-menu-link">
-                <a class="header__nav-menu-link_vip-img">
-                  <img src="/images/vip.png" alt="VIP">
+          <div class="header__menu open-menu">
+            <a class="header__logo">
+              <img class="logo" src="/images/logo.svg" alt="Логотип">
+              <button class="btn-close-menu">
+                <div class="close-icon">
+                  <img src="/images/close.svg" alt="Крестик">
+                </div>
+              </button>
+            </a>
+            <nav class="header__nav-menu">
+              <ul>
+                <li class="header__nav-menu-link">
+                  <a href="#">Главная</a>
+                  <div class="right-icon">
+                    <img src="/images/right.svg" alt="Стрелочка">
+                  </div>
+                </li>
+                <li class="header__nav-menu-link">
+                  <a href="#">Мероприятия</a>
+                  <div class="right-icon">
+                    <img src="/images/right.svg" alt="Стрелочка">
+                  </div>
+                </li>
+                <li class="header__nav-menu-link">
+                  <a href="#">Браслеты</a>
+                  <div class="right-icon">
+                    <img src="/images/right.svg" alt="Стрелочка">
+                  </div>
+                </li>
+                <li class="header__nav-menu-link">
+                  <a href="#">Правила</a>
+                  <div class="right-icon">
+                    <img src="/images/right.svg" alt="Стрелочка">
+                  </div>
+                </li>
+                <li class="header__nav-menu-link">
+                  <a class="header__nav-menu-link_vip-img">
+                    <img src="/images/vip.png" alt="VIP">
+                  </a>
+                  <div class="right-icon">
+                    <img src="/images/right.svg" alt="Стрелочка">
+                  </div>
+                </li>
+                <li class="header__nav-menu-link">
+                  <a href="#">Контакты</a>
+                  <div class="right-icon">
+                    <img src="/images/right.svg" alt="Стрелочка">
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="btn_container">
+              <button class="btn btn__header">Регистрация/Вход</button>
+            </div>
+            <div class="mobile-menu">
+              <div class="contacts">
+                <a href="tel:70000000000" class="contact">
+                  <div class="contact-ico">
+                    <img src="/images/phone.svg" alt="Телефон">
+                  </div>
+                  <p class="contact-text">+7 (000) 000-00-00</p>
                 </a>
-              </li>
-              <li class="header__nav-menu-link"><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <button class="btn btn__header">Регистрация/Вход</button>
+                <a href="mailto:info@gmail.com" class="contact">
+                  <div class="contact-ico">
+                    <img src="/images/mail-icon.svg" alt="Почта">
+                  </div>
+                  <p class="contact-text">info@gmail.com</p>
+                </a>
+              </div>
+              <div class="socials">
+                <div class="menu-social-link">
+                  <img src="/images/Instagram.svg" alt="Instagram">
+                </div>
+                <div class="menu-social-link">
+                  <img src="/images/whatsapp.svg" alt="Whatsapp">
+                </div>
+                <div class="menu-social-link">
+                  <img src="/images/vk.svg" alt="ВКонтакте">
+                </div>
+                <div class="menu-social-link">
+                  <img src="/images/telegram.svg" alt="Telegram">
+                </div>
+              </div>
+              <p class="copyright">
+                © 2024 ООО «Притяжение».<br> Все права защищены.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -114,25 +184,27 @@
           <div class="bonuses__container">
             <h2 class="section-title">Вступив в клуб, вы получаете</h2>
             <div class="bonus__card">
-              <div class="card__bg">
-                <img src="/images/mask-bg.jpg" alt="Маска">
+              <div class="bonus__card_inner-top">
+                <div class="card__bg">
+                  <img src="/images/mask-bg.jpg" alt="Маска">
+                </div>
+                <div class="bonus__card-content">
+                  <ul class="bonuses-list">
+                    <li class="bonus-item">Доступ к бронированию мероприятий</li>
+                    <li class="bonus-item">Телеграмм чат с гостями клуба и связь с владельцем и администратором</li>
+                    <li class="bonus-item">Любительские встречи с гостями клуба</li>
+                  </ul>
+                </div>
+                <div class="bonus__card-content">
+                  <ul class="bonuses-list">
+                    <li class="bonus-item">Возможность стать VIP гостем на наших мероприятиях</li>
+                    <li class="bonus-item">Возможность выигрывать крутые призы «Притяжение»</li>
+                    <li class="bonus-item">Скидки на продукцию и услуги партнёров клуба</li>
+                  </ul>
+                </div>
               </div>
-              <div class="bonus__card-content">
-                <ul class="bonuses-list">
-                  <li class="bonus-item">Доступ к бронированию мероприятий</li>
-                  <li class="bonus-item">Телеграмм чат с гостями клуба и связь с владельцем и администратором</li>
-                  <li class="bonus-item">Любительские встречи с гостями клуба</li>
-                </ul>
-              </div>
-              <div class="bonus__card-content">
-                <ul class="bonuses-list">
-                  <li class="bonus-item">Возможность стать VIP гостем на наших мероприятиях</li>
-                  <li class="bonus-item">Возможность выигрывать крутые призы «Притяжение»</li>
-                  <li class="bonus-item">Скидки на продукцию и услуги партнёров клуба</li>
-                </ul>
-              </div>
+              <button class="btn btn-bonus">Подать заявку</button>
             </div>
-            <button class="btn btn-bonus">Подать заявку</button>
           </div>
         </div>
       </section>
@@ -159,25 +231,25 @@
         <div class="container">
           <div class="pairs__container">
             <h2 class="section-title">Наши партнёры</h2>
-              <div class="swiper swiper-pairs">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img class="swiper-item" src="/images/logo-1.svg" alt="Тинькофф">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-item" src="/images/logo-2.svg" alt="Самокат">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-item" src="/images/logo-3.svg" alt="Apple Watch">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-item" src="/images/logo-4.svg" alt="Яндекс">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-item" src="/images/logo-5.svg" alt="Samsung">
-                  </div>
+            <div class="swiper swiper-pairs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-item" src="/images/logo-1.svg" alt="Тинькофф">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-item" src="/images/logo-2.svg" alt="Самокат">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-item" src="/images/logo-3.svg" alt="Apple Watch">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-item" src="/images/logo-4.svg" alt="Яндекс">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-item" src="/images/logo-5.svg" alt="Samsung">
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </section>
@@ -209,7 +281,7 @@
               <a href="/index.html" class="logo">
                 <img src="/images/logo.svg" alt="Логотип">
               </a>
-              <a class="footer__mail">
+              <a href="mailto:info@gmail.com" class="footer__mail">
                 <div class="mail-icon">
                   <img src="/images/mail-icon.svg" alt="Почта">
                 </div>
