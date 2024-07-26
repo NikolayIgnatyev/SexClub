@@ -59,10 +59,10 @@ ul {
 	justify-content: space-between;
 	align-self: center;
 	flex-wrap: wrap;
+	overflow: hidden;
 }
 
 .header__menu {
-	transform: translateX(100%);
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -72,6 +72,14 @@ ul {
 }
 
 .right-icon{
+	display: none;
+}
+
+.burger{
+	display: none;
+}
+
+.header__logo{
 	display: none;
 }
 
@@ -130,9 +138,8 @@ ul {
 
 .open-menu {
 	display: flex;
-	transform: translateX(0%);
 	transition: 0.4s;
-	height: 100vh;
+	min-height: 100vh;
 	justify-content: flex-start;
 	padding: 0 20px;
 	flex-direction: column;
@@ -1017,6 +1024,23 @@ ul {
 }
 
 @media (max-width:640px) {
+
+	.header__logo{
+		display: unset;
+	}
+
+	.burger{
+		display: unset;
+	}
+
+	.header__menu{
+		transform: translateX(100%);
+	}
+
+	.header__menu.open-menu{
+		transform: translateX(0%);
+	}
+
 	.header__container{
 		overflow: hidden;
 		max-height: 52px;
