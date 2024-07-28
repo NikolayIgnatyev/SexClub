@@ -6,12 +6,21 @@ var swiper = new Swiper(".swiper-pairs", {
 });
 
 const btnBurger = document.querySelector(".burger");
-const btnClose = document.querySelector(".btn-close-menu");
-const menu = document.querySelector(".header__menu");
+const menu = document.querySelector(".burger-menu");
+const burgerIcon = document.querySelector(".icon-burger");
 
 btnBurger.addEventListener('click', () =>{
-	menu.classList.add('open-menu');
+	menu.classList.toggle('open-menu');
+	document.body.classList.toggle("lock");
 })
-btnClose.addEventListener('click', () => {
-	menu.classList.remove('open-menu');
-})
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerIcon = document.querySelector('.icon-burger');
+    if (burgerIcon) {
+        burgerIcon.addEventListener('click', function() {
+            burgerIcon.classList.toggle('open');
+        });
+    } else {
+        console.error('Element with id "burgerIcon" not found');
+    }
+});
